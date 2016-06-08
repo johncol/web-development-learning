@@ -17,71 +17,100 @@
 
 	<form method="POST">
 
-		<!-- input type=text -->
-		<div class="form-group">
-			<label for="username">Username</label>
-			<input type="text" class="form-control" name="username" id="username" placeholder="Username">
-		</div>
+		<fieldset>
 
-		<!-- input type=email -->
-		<div class="form-group">
-			<label for="email">Email</label>
-			<input type="email" class="form-control" name="email" id="email" placeholder="Email">
-		</div>
+			<legend>Account information</legend>
 
-		<!-- input type=password -->
-		<div class="form-group">
-			<label for="password">Password</label>
-			<input type="password" class="form-control" name="password" id="password" placeholder="Password">
-		</div>
-
-		<!-- input type=file -->
-		<div class="form-group">
-			<label for="photo">Photo</label>
-			<input type="file" class="form-control" name="photo" id="photo">
-			<p class="help-block">Upload a photo with .jpg format</p>
-		</div>
-
-		<!-- input type=checkbox -->
-		<div class="form-group">
-			<label>Music preferences</label>
-			<div class="checkbox">
-				<label>
-					<input type="checkbox" name="ballenato"> Ballenato
-				</label>
+			<!-- input type=text -->
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input type="text" class="form-control" name="username" id="username" placeholder="Username">
 			</div>
-			<div class="checkbox">
-				<label>
-					<input type="checkbox" name="metal"> Metal
-				</label>
-			</div>
-			<div class="checkbox">
-				<label>
-					<input type="checkbox" name="asereje"> Asereje
-				</label>
-			</div>
-		</div>
 
-		<!-- input type=radio -->
-		<div class="form-group">
-			<label>Spiritual beliefs</label>
-			<div class="radio">
-				<label>
-					<input type="radio" name="beliefs" id="beliefs-yes" value="yes"> Believer
-				</label>
+			<!-- input type=email -->
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" name="email" id="email" placeholder="Email">
 			</div>
-			<div class="radio">
-				<label>
-					<input type="radio" name="beliefs" id="beliefs-no" value="no"> No believer
-				</label>
-			</div>
-		</div>
 
-		<!-- textarea -->
-		<div class="form-group">
-			<label for="password">Comments</label>
-			<textarea class="form-control" name="comments" id="comments"></textarea>
-		</div>
+			<!-- input type=password -->
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" class="form-control" name="password" id="password" placeholder="Password">
+			</div>
+
+			<!-- input type=file -->
+			<div class="form-group">
+				<label for="photo">Photo</label>
+				<input type="file" class="form-control" name="photo" id="photo">
+				<p class="help-block">Upload a photo with .jpg format</p>
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+
+			<legend>Several choices controls</legend>
+
+			<!-- input type=checkbox -->
+			<div class="form-group">
+				<label>Music preferences</label>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="ballenato"> Ballenato
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="metal"> Metal
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="asereje"> Asereje
+					</label>
+				</div>
+			</div>
+
+			<!-- input type=radio -->
+			<div class="form-group">
+				<label>Spiritual beliefs</label>
+				<div class="radio">
+					<label>
+						<input type="radio" name="beliefs" id="beliefs-yes" value="yes"> Believer
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="beliefs" id="beliefs-no" value="no"> No believer
+					</label>
+				</div>
+			</div>
+
+			<!-- select -->
+			<div class="form-group">
+				<label for="football-team">Football Team</label>
+				<select class="form-control" name="football-team" id="football-team">
+					<option value="barcelona">Barcelona</option>
+					<option value="juventus">Juventus</option>
+					<option value="chelsea">Chelsea</option>
+					<option value="bayern-munich">Bayern Munich</option>
+				</select>
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+
+			<legend>Another legend</legend>
+
+			<!-- textarea -->
+			<div class="form-group">
+				<label for="password">Comments</label>
+				<textarea class="form-control" name="comments" id="comments"></textarea>
+			</div>
+
+		</fieldset>
 
 		<!-- button -->
 		<button type="submit" class="btn btn-primary">Submit</button>
