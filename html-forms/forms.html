@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+
+	<h1>HTML Forms</h1>
+
+	<form method="POST">
+
+		<!-- input type=text -->
+		<div class="form-group">
+			<label for="username">Username</label>
+			<input type="text" class="form-control" name="username" id="username" placeholder="Username">
+		</div>
+
+		<!-- input type=email -->
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+		</div>
+
+		<!-- input type=password -->
+		<div class="form-group">
+			<label for="password">Password</label>
+			<input type="password" class="form-control" name="password" id="password" placeholder="Password">
+		</div>
+
+		<!-- input type=file -->
+		<div class="form-group">
+			<label for="photo">Photo</label>
+			<input type="file" class="form-control" name="photo" id="photo">
+			<p class="help-block">Upload a photo with .jpg format</p>
+		</div>
+
+		<!-- input type=checkbox -->
+		<div class="form-group">
+			<label>Music preferences</label>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" name="ballenato"> Ballenato
+				</label>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" name="metal"> Metal
+				</label>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" name="asereje"> Asereje
+				</label>
+			</div>
+		</div>
+
+		<!-- input type=radio -->
+		<div class="form-group">
+			<label>Spiritual beliefs</label>
+			<div class="radio">
+				<label>
+					<input type="radio" name="beliefs" id="beliefs-yes" value="yes"> Believer
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="beliefs" id="beliefs-no" value="no"> No believer
+				</label>
+			</div>
+		</div>
+
+		<!-- textarea -->
+		<div class="form-group">
+			<label for="password">Comments</label>
+			<textarea class="form-control" name="comments" id="comments"></textarea>
+		</div>
+
+		<!-- button -->
+		<button type="submit" class="btn btn-primary">Submit</button>
+
+	</form>
+
+</div>
+
+</body>
+</html>
