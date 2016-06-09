@@ -8,6 +8,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<style>
+		.container { width: 700px; }
+		fieldset { margin-top: 30px; }
+	</style>
 </head>
 <body>
 
@@ -57,17 +61,17 @@
 				<label>Music preferences</label>
 				<div class="checkbox">
 					<label>
-						<input type="checkbox" name="ballenato"> Ballenato
+						<input type="checkbox" name="music-preferences" value="ballenato"> Ballenato
 					</label>
 				</div>
 				<div class="checkbox">
 					<label>
-						<input type="checkbox" name="metal"> Metal
+						<input type="checkbox" name="music-preferences" value="metal"> Metal
 					</label>
 				</div>
 				<div class="checkbox">
 					<label>
-						<input type="checkbox" name="asereje"> Asereje
+						<input type="checkbox" name="music-preferences" value="asereje"> Asereje
 					</label>
 				</div>
 			</div>
@@ -77,12 +81,12 @@
 				<label>Spiritual beliefs</label>
 				<div class="radio">
 					<label>
-						<input type="radio" name="beliefs" id="beliefs-yes" value="yes"> Believer
+						<input type="radio" name="spiritual-beliefs" value="yes"> Believer
 					</label>
 				</div>
 				<div class="radio">
 					<label>
-						<input type="radio" name="beliefs" id="beliefs-no" value="no"> No believer
+						<input type="radio" name="spiritual-beliefs" value="no"> No believer
 					</label>
 				</div>
 			</div>
@@ -91,11 +95,30 @@
 			<div class="form-group">
 				<label for="football-team">Football Team</label>
 				<select class="form-control" name="football-team" id="football-team">
-					<option value="barcelona">Barcelona</option>
-					<option value="juventus">Juventus</option>
-					<option value="chelsea">Chelsea</option>
-					<option value="bayern-munich">Bayern Munich</option>
+					<optgroup label="Worldwide">
+						<option value="barcelona">Barcelona</option>
+						<option value="juventus">Juventus</option>
+						<option value="chelsea" selected>Chelsea</option>
+						<option value="bayern-munich">Bayern Munich</option>
+					</optgroup>
+					<optgroup label="Colombia">
+						<option value="millonarios">Millonarios</option>
+						<option value="santafe">Santafe</option>
+					</optgroup>
 				</select>
+			</div>
+
+			<!-- datalist -->
+			<div class="form-group">
+				<label for="country">Country</label>
+				<input type="text" class="form-control" list="common-countries" name="country" id="country" placeholder="Choose/write where you are from..">
+				<datalist id="common-countries">
+					<option value="Colombia">
+					<option value="United States">
+					<option value="United Kingdom">
+					<option value="Spain">
+					<option value="Germany">
+				</datalist>
 			</div>
 
 		</fieldset>
@@ -108,6 +131,84 @@
 			<div class="form-group">
 				<label for="password">Comments</label>
 				<textarea class="form-control" name="comments" id="comments"></textarea>
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+			
+			<legend>Input types supported only by some browsers</legend>
+			
+			<!-- input type=color -->
+			<div class="form-group">
+				<label for="color">Color</label>
+				<input type="color" class="form-control" id="color" name="color" style="width: 80px;">
+			</div>
+			
+			<!-- input type=time -->
+			<div class="form-group">
+				<label for="time">Time</label>
+				<input type="time" class="form-control" id="time" name="time">
+			</div>
+			
+			<!-- input type=date -->
+			<div class="form-group">
+				<label for="date">Date</label>
+				<input type="date" class="form-control" id="date" name="date">
+			</div>
+			
+			<!-- input type=datetime-local -->
+			<div class="form-group">
+				<label for="datetime-local">Datetime Local</label>
+				<input type="datetime-local" class="form-control" id="datetime-local" name="datetime-local" placeholder="Does not include timezone">
+			</div>
+			
+			<!-- input type=datetime -->
+			<div class="form-group">
+				<label for="datetime">Datetime</label>
+				<input type="datetime" class="form-control" id="datetime" name="datetime" placeholder="Includes timezone">
+			</div>
+			
+			<!-- input type=week -->
+			<div class="form-group">
+				<label for="week">Week</label>
+				<input type="week" class="form-control" id="week" name="week">
+			</div>
+			
+			<!-- input type=month -->
+			<div class="form-group">
+				<label for="month">Month</label>
+				<input type="month" class="form-control" id="month" name="month">
+			</div>
+			
+			<!-- input type=number -->
+			<div class="form-group">
+				<label for="number">Number</label>
+				<input type="number" class="form-control" id="number" name="number" value="5">
+			</div>
+			
+			<!-- input type=range -->
+			<div class="form-group">
+				<label for="range">Range</label>
+				<input type="range" id="range" name="range" min="1" max="10">
+			</div>
+			
+			<!-- input type=search -->
+			<div class="form-group">
+				<label for="search">Search</label>
+				<input type="search" class="form-control" id="search" name="search">
+			</div>
+			
+			<!-- input type=tel -->
+			<div class="form-group">
+				<label for="tel">Telephone</label>
+				<input type="tel" class="form-control" id="tel" name="tel">
+			</div>
+			
+			<!-- input type=url -->
+			<div class="form-group">
+				<label for="url">URL</label>
+				<input type="url" class="form-control" id="url" name="url">
 			</div>
 
 		</fieldset>
