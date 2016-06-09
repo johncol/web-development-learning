@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+	<h1>HTML Forms</h1>
+
+	<form method="POST" action="form-3.html">
+
+		<fieldset>
+
+			<legend>Several choices controls: input types checkbox and radio, selects and datalist</legend>
+
+			<!-- input type=checkbox -->
+			<div class="form-group">
+				<label>Music preferences</label>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="music-preferences" value="ballenato"> Ballenato
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="music-preferences" value="metal"> Metal
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="music-preferences" value="asereje"> Asereje
+					</label>
+				</div>
+			</div>
+
+			<!-- input type=radio -->
+			<div class="form-group">
+				<label>Spiritual beliefs</label>
+				<div class="radio">
+					<label>
+						<input type="radio" name="spiritual-beliefs" value="yes"> Believer
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="spiritual-beliefs" value="no"> No believer
+					</label>
+				</div>
+			</div>
+
+			<!-- select -->
+			<div class="form-group">
+				<label for="football-team">Football Team</label>
+				<select class="form-control" name="football-team" id="football-team">
+					<optgroup label="Worldwide">
+						<option value="barcelona">Barcelona</option>
+						<option value="juventus">Juventus</option>
+						<option value="chelsea" selected>Chelsea</option>
+						<option value="bayern-munich">Bayern Munich</option>
+					</optgroup>
+					<optgroup label="Colombia">
+						<option value="millonarios">Millonarios</option>
+						<option value="santafe">Santafe</option>
+					</optgroup>
+				</select>
+			</div>
+
+			<!-- datalist -->
+			<div class="form-group">
+				<label for="country">Country</label>
+				<input type="text" class="form-control" list="common-countries" name="country" id="country" placeholder="Choose/write where you are from..">
+				<datalist id="common-countries">
+					<option value="Colombia">
+					<option value="United States">
+					<option value="United Kingdom">
+					<option value="Spain">
+					<option value="Germany">
+				</datalist>
+			</div>
+
+		</fieldset>
+
+		<!-- button -->
+		<button type="submit" class="btn btn-success pull-right">Next</button>
+
+	</form>
+
+</div>
+
+</body>
+</html>

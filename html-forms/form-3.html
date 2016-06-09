@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+	<h1>HTML Forms</h1>
+
+	<form method="POST" action="form-4.html">
+
+		<fieldset>
+			
+			<legend>Dates and times, input types: time, date, datetime, datetime-local, week and month</legend>
+			
+			<!-- input type=time -->
+			<div class="form-group">
+				<label for="time">Time</label>
+				<input type="time" class="form-control" id="time" name="time">
+			</div>
+			
+			<!-- input type=date -->
+			<div class="form-group">
+				<label for="date">Date</label>
+				<input type="date" class="form-control" id="date" name="date">
+			</div>
+			
+			<!-- input type=datetime-local -->
+			<div class="form-group">
+				<label for="datetime-local">Datetime Local</label>
+				<input type="datetime-local" class="form-control" id="datetime-local" name="datetime-local" placeholder="Does not include timezone">
+			</div>
+			
+			<!-- input type=datetime -->
+			<div class="form-group">
+				<label for="datetime">Datetime</label>
+				<input type="datetime" class="form-control" id="datetime" name="datetime" placeholder="Includes timezone">
+			</div>
+			
+			<!-- input type=week -->
+			<div class="form-group">
+				<label for="week">Week</label>
+				<input type="week" class="form-control" id="week" name="week">
+			</div>
+			
+			<!-- input type=month -->
+			<div class="form-group">
+				<label for="month">Month</label>
+				<input type="month" class="form-control" id="month" name="month">
+			</div>
+
+		</fieldset>
+
+		<!-- button -->
+		<button type="submit" class="btn btn-success pull-right">Next</button>
+
+	</form>
+
+</div>
+
+</body>
+</html>

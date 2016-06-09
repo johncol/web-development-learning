@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Latest jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+	<h1>HTML Forms</h1>
+
+	<form method="POST" action="form-1.html">
+
+		<fieldset>
+			
+			<legend>Others input types: color, number, range, search, tel, url</legend>
+			
+			<!-- input type=color -->
+			<div class="form-group">
+				<label for="color">Color</label>
+				<input type="color" class="form-control" id="color" name="color" style="width: 80px;">
+			</div>
+			
+			<!-- input type=number -->
+			<div class="form-group">
+				<label for="number">Number</label>
+				<input type="number" class="form-control" id="number" name="number" value="5">
+			</div>
+			
+			<!-- input type=range -->
+			<div class="form-group">
+				<label for="range">Range</label>
+				<input type="range" id="range" name="range" min="1" max="10">
+			</div>
+			
+			<!-- input type=search -->
+			<div class="form-group">
+				<label for="search">Search</label>
+				<input type="search" class="form-control" id="search" name="search">
+			</div>
+			
+			<!-- input type=tel -->
+			<div class="form-group">
+				<label for="tel">Telephone</label>
+				<input type="tel" class="form-control" id="tel" name="tel">
+			</div>
+			
+			<!-- input type=url -->
+			<div class="form-group">
+				<label for="url">URL</label>
+				<input type="url" class="form-control" id="url" name="url">
+			</div>
+
+		</fieldset>
+
+		<!-- button -->
+		<button type="submit" class="btn btn-info pull-right">Start again</button>
+
+	</form>
+
+</div>
+
+</body>
+</html>
