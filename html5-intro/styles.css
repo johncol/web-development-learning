@@ -1,0 +1,4 @@
+fieldset { margin-top: 30px; }
+.container { max-width: 900px; padding-top: 50px; }
+.jumbotron { position: relative; }
+.jumbotron img { position: absolute; top: 50px; right: 50px; width: 150px; height: 150px; }
