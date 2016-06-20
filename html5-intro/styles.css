@@ -1,4 +1,7 @@
+body { font-family: Tahoma, sans-serif; color: #555; cursor: default; }
+h1 { color: #CC6055; }
 fieldset { margin-top: 30px; }
+a, a:link, a:visited, a:hover, a:active { text-decoration: none; }
 .container { max-width: 900px; padding-top: 50px; }
 .jumbotron { position: relative; }
 .jumbotron img { position: absolute; top: 50px; right: 50px; width: 150px; height: 150px; }
