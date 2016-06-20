@@ -1,0 +1,48 @@
+html, body {
+	font-family: Tahoma, sans-serif;
+	color: #555;
+	background: #2f3238;
+	cursor: default;
+}
+
+h1 { color: #CC6055; }
+
+.jcarousel-wrapper:-webkit-full-screen {
+    width: 1152px;
+    height: 648px;
+    border: none;
+}
+.jcarousel-wrapper:-webkit-full-screen .jcarousel img {
+    width: 1152px;
+    height: 648px;
+}
+
+.jcarousel-wrapper:-moz-full-screen {
+    width: 1152px;
+    height: 648px;
+    border: none;
+}
+.jcarousel-wrapper:-moz-full-screen .jcarousel img {
+    width: 1152px;
+    height: 648px;
+}
+
+.jcarousel-wrapper:-ms-full-screen {
+    width: 1152px;
+    height: 648px;
+    border: none;
+}
+.jcarousel-wrapper:-ms-full-screen .jcarousel img {
+    width: 1152px;
+    height: 648px;
+}
+
+.jcarousel-wrapper:full-screen {
+    width: 1152px;
+    height: 648px;
+    border: none;
+}
+.jcarousel-wrapper:full-screen .jcarousel img {
+    width: 1152px;
+    height: 648px;
+}
