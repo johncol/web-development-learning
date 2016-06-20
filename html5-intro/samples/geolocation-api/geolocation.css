@@ -1,0 +1,8 @@
+body {
+	font-family: Tahoma, sans-serif;
+	color: #999;
+	cursor: default;
+}
+
+h1 { color: #CC6055; margin-bottom: 50px;}
+::selection { background: transparent; }
