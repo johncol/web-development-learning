@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IndexedDB</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="indexed-db.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="main-title">Books</h1>
+		<div class="row">
+			<nav class="col-sm-3 main-nav">
+				<ul>
+					<li><a href="register-book.html">Register a book</a></li>
+					<li><a href="list-books.html" class="active">Books</a></li>
+				</ul>
+			</nav>
+			<section class="col-sm-9 main-content">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Book's name</th>
+							<th>Author</th>
+							<th class="date">Publication Date</th>
+							<th class="score">Score</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</section>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="js/app.js"></script>
+	<script src="js/register-book-controller.js"></script>
+	<script src="js/list-books-controller.js"></script>
+	<script src="js/book-service.js"></script>
+	<script>
+		(function (app) {
+			app.getController('list-books')();
+		})(window.app);
+	</script>
+</body>
+</html>
