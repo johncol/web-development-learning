@@ -16,18 +16,8 @@
 			db = event.target.result;
 		};
 
-		openDBRequest.onupgradeneeded = function (e) {
-			db = event.target.result;
-			var objectStore = db.createObjectStore(bookOS, { keyPath: 'id', autoIncrement: true });
-			objectStore.createIndex('name', 'name', { unique: true });
-			objectStore.createIndex('author', 'author', { unique: false });
-			objectStore.transaction.oncomplete = function (e) {
-				console.log(bookShelfDB + ' created.')
-			};
-		};
-
 		var generateId = function () {
-			return Math.floor(Math.random() * 1000);
+			return Math.floor(Math.random() * 10000000);
 		};
 
 		return {
@@ -56,9 +46,6 @@
 			},
 
 			list: function () {
-				openDBRequest.onsuccess = function (e) {
-					db = event.target.result;
-				};
 				var transaction = db.transaction([bookOS]);
 				var objectStore = transaction.objectStore(bookOS);
 				var cursor = objectStore.openCursor();
