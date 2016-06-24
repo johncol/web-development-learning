@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Workers</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link rel="stylesheet" href="web-workers.css">
+</head>
+<body id="page3">
+	<div class="container">
+		<h1>Web Workers</h1>
+		<section id="content">
+			<form>
+				<div class="form-group row">
+					<label for="nth-prime-number" class="col-sm-8">
+						Want to know the nth prime number?
+						<strong>A worker can do it for you:</strong>
+					</label>
+					<div class="col-sm-2">
+						<input type="number" min="1" class="form-control" name="nth-prime-number" id="nth-prime-number" placeholder="NTH prime">
+					</div>
+					<div class="col-sm-2">
+						<button type="button" class="btn btn-primary" id="calc-button">CALCULATE IT</button>
+					</div>
+				</div>
+				<section id="prime-number">
+					<strong>The result is:</strong> <output id="output"></output>
+				</section>
+				<div id="loading">
+					<img src="assets/loading.gif" alt="loading..." draggable="false">
+				</div>
+			</form>
+		</section>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="web-workers.js"></script>
+</body>
+</html>

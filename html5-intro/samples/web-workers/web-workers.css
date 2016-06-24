@@ -1,0 +1,48 @@
+
+body {
+	font-size: 22px;
+	font-family: 'Poiret One', cursive;
+	color: #666;
+}
+
+h1 {
+	font-weight: bolder;
+	font-size: 150%;
+	color: #3f51b5;
+}
+
+.container {
+	margin: 100px auto 0;
+	max-width: 1000px;
+}
+
+label { font-weight: normal; }
+input { font-family: Tahoma, sans-serif; }
+
+.btn {
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	border: none;
+	background: #3f51b5;
+	outline: none !important;
+}
+
+.btn:hover { background: #3f51b5; }
+.btn:active { background: #3f51b5; }
+.btn:focus { background: #3f51b5; }
+
+output { 
+	font-family: Tahoma, sans-serif;
+	display: inline;
+	font-size: 90%;
+}
+
+#loading {
+	text-align: center;
+}
+
+img {
+	width: 200px;
+	position: relative;
+	top: -20px;
+}
